@@ -1,0 +1,5 @@
+.center { text-align: center; }
+.hidden { display: none; }
+button {
+    padding: 5px;
+}

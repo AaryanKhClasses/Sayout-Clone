@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sayout - Clone</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./index.js" type="module"></script>
+</head>
+<body>
+    <div class="center">
+        <h1>💬 Sayout - Clone</h1>
+        <p style="margin-top: 75px; font-size: 50px;">💬 Sayout - Clone</p>
+        <p style="margin-top: -50px; font-size: 20px;">An Anonymous Messaging Service!</p>
+    </div>
+
+    <div id="not-login" class="center">
+        <h1 class="center" style="margin-top: 25px;">Welcome to Sayout</h1>
+        <p style="font-size: 20px; margin-top: -20px;">Please login / Register to use this anonymous messaging service.</p>
+        <form id="login-form">
+            <h1>👤 Login</h1>
+            <input type="text" name="username" placeholder="Username" id="login_username" style="margin-bottom: 10px; padding: 5px; border-radius: 5px;"><br>
+            <input type="password" name="password" placeholder="Password" id="login_password" style="margin-bottom: 10px; padding: 5px; border-radius: 5px;"><br>
+            <button type="submit" style="margin-bottom: 5px;">Login</button>
+        </form>
+        <button id="goto_register_btn">Register</button>
+
+        <form id="register-form">
+            <h1>👤 Register</h1>
+            <input type="text" name="username" placeholder="Username" id="register_username" style="margin-bottom: 10px; padding: 5px; border-radius: 5px;"><br>
+            <input type="password" name="password" placeholder="Password" id="register_password" style="margin-bottom: 10px; padding: 5px; border-radius: 5px;"><br>
+            <input type="password" name="password" placeholder="Confirm Password" id="register_conf_password" style="margin-bottom: 10px; padding: 5px; border-radius: 5px;"><br>
+            <button type="submit" style="margin-bottom: 5px;">Register</button>
+        </form>
+        <button id="goto_login_btn">Login</button>
+    </div>
+
+    <div id="login" class="center">
+        <h1>Welcome, User!</h1>
+        <button id="logout">Logout</button>
+    </div>
+    <div id="messages"></div>
+</body>
+</html>
